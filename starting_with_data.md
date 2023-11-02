@@ -22,6 +22,7 @@ The highest ratio of ordered/stock is an Android Infant Short Sleeve Tee Pewter 
 Question 2: How many products have their number of orders accurately represented in the sales_by_sku table?
 
 SQL Queries:
+
 SELECT count(*) 
 FROM products p
 Join sales_by_sku s
@@ -29,6 +30,7 @@ on p."SKU" = s."productSKU"
 where p."orderedQuantity" = s."total_ordered" and
 	p."orderedQuantity" >0 and
 	s."total_ordered" >0
+
 Answer: 
 Only 5 rows match.
 
