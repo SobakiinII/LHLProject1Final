@@ -38,6 +38,7 @@ Question 3: Add a row to the cleaned sales_reports table for a SKU *not* already
 SQL Queries:
 
 --to find a suitable sku
+
 Select "productSKU"
 FROM sales_by_sku_view
 where "productSKU" IN (
